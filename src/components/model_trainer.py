@@ -71,6 +71,7 @@ class ModelTrainer:
             predicted=best_model.predict(x_test)
 
             r2_square=r2_score(y_test,predicted)
+            print(f"Best model: {best_model_name} with R² = {r2_square}")
             return f"r2_square ={r2_square}"
 
         except Exception as e:
